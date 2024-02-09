@@ -4,7 +4,7 @@
 
 ### Input Data
 
-The Python script reads a CSV file named "model_metrics.csv" containing a decision matrix. The columns of this matrix represent different criteria, such as Accuracy, Training Time, and Model Size, for various models.
+A decision matrix named "model_metrics.csv" is read by the Python script. This matrix's columns correspond to numerous model-specific characteristics, including Accuracy, Training Time, and Model Size.
 
 #### Models Used in the Analysis
 
@@ -23,12 +23,12 @@ The decision matrix includes the following models:
 
 ### TOPSIS Analysis
 
-The TOPSIS analysis is performed using the `topsis_analysis` function. The function takes the input file path, weights, and impacts as parameters.
+The `topsis_analysis} function is used to carry out the TOPSIS analysis. Weights, effects, and the path of the input file are sent as arguments to the function.
 
-- **Weights:** The weights are specified as a comma-separated string (e.g., "0.4,0.3,0.3").
-- **Impacts:** The impacts are specified as a string of '+' and '-' symbols corresponding to the desired impact for each criterion (e.g., "+,-,-").
+- **Weights:** The weights are given as a string separated by commas, for example, "0.4,0.3,0.3".
+- **Results:** A string of "+" and "-" symbols, representing the intended impact for each criterion, is used to specify the affects (e.g., "+,-,-").
 
-The `topsis` function normalizes the decision matrix, calculates the weighted normalized decision matrix, identifies positive and negative ideal solutions, and computes TOPSIS scores and ranks.
+The `topsis` function computes TOPSIS scores and ranks, finds positive and negative ideal solutions, normalises the decision matrix, and computes the weighted normalised decision matrix.
 
 ### Visualization
 
