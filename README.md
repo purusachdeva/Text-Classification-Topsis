@@ -35,16 +35,3 @@ The `topsis` function computes TOPSIS scores and ranks, finds positive and negat
 The Python script generates and saves a bar plot illustrating TOPSIS scores for each alternative. The plot is shown below:
 
 ![TOPSIS Scores Bar Plot](topsis_scores_bar_plot.png)
-
-Additionally, a table with TOPSIS results, including scores and ranks, is saved as a CSV file.
-
-## Usage
-
-To execute the TOPSIS analysis, run the Python script by providing the appropriate input file, weights, and impacts.
-
-```python
-input_file = "model_metrics.csv"
-weights_str = "0.4,0.3,0.3"
-impacts_str = "+,-,-"
-output_file = "outputs.csv"
-topsis_analysis(input_file, weights_str, impacts_str, output_file)
